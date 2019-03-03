@@ -1,0 +1,21 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+      <ion-label position="floating">Altura</ion-label>
+      <ion-input type="number" placeholder="Digita el valor" [(ngModel)]="altura" name="altura"></ion-input>
+    
+    <ion-label position="floating">Base</ion-label>
+      <ion-input type="number" placeholder="Digita el valor" [(ngModel)]="base" name="base"></ion-input>
+    </ion-item>
+    <ion-button expand="full" (click)="calculate(altura,base)">Calcular</ion-button>
+</ion-content>
